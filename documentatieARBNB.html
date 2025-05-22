@@ -38,15 +38,45 @@
     </ul>
 
     <h3>2.2 Analiză de competiție</h3>
-    <p>Au fost analizate aplicațiile Airbnb și Booking.com pentru a identifica patternurile de interacțiune predominante. Airbnb folosește un meniu persistent și o interfață clară, în timp ce Booking afișează conținut dens și adesea copleșitor. Observațiile au fost folosite pentru a informa structura și ierarhia vizuală a aplicației ARBNB.</p>
-
-    <h2>3. Rezultate și Design</h2>
+    <p>Pentru a înțelege standardele actuale din industrie și a identifica ce patternuri de interacțiune sunt cele mai eficiente, am analizat două aplicații de referință: Airbnb și Booking.com.</p>
+    <p>Aspecte analizate:</p>
+    <ul>
+        <li>organizarea meniului și accesul la funcționalități,</li>
+        <li>modul de afișare a rezultatelor căutării,</li>
+        <li>tipul de interacțiuni disponibile (ex: swipe, filtre, hartă),</li>
+        <li>claritatea și viteza de acces la informații.</li>
+    </ul>
+    <p> Airbnb folosește un meniu persistent în partea de jos a ecranului, ceea ce oferă navigare ușoară și rapidă. Booking, în schimb, ascunde o parte dintre funcționalități în meniuri mai puțin evidente.
+Ambele aplicații pun accent pe imagini mari și un sistem de filtre detaliat, însă uneori Booking afișează prea mult conținut deodată, ceea ce poate fi obositor pentru utilizator.
+Airbnb este mai bine optimizată pentru utilizatorii ocazionali, cu o interfață intuitivă și clară.
+Pe baza acestor observații, am decis să păstrăm claritatea vizuală și organizarea intuitivă a Airbnb, dar să simplificăm numărul de pași necesari pentru a accesa detalii despre o cazare.
+    </p>
+    <p>Ambele metode de cercetare – chestionarul și analiza de competiție – ne-au ajutat să definim o direcție de design centrată pe utilizator, punând accent pe simplitate, claritate și eficiență în procesul de navigare și rezervare.</p>
+    <h2>3. Design</h2>
     <h3>3.1 Structura aplicației</h3>
-    <p>S-a realizat o diagramă sitemap ce evidențiază secțiunile principale: Autentificare, Pagina Principală, Căutare, Detalii Cazare, Cont Utilizator, Funcționalitate la locație (verificare VR).</p>
-
+    <p>Pentru a avea o privire de ansamblu asupra structurii aplicației mobile, am realizat o diagramă sitemap care evidențiază secțiunile principale ale aplicației și conexiunile dintre ele.</p>
+    <ul>
+        <li>Autentificare / Înregistrare – punctul de intrare în aplicație;</li>
+        <li>Pagina principală (Homepage) – cu acces rapid spre funcționalitățile cheie;</li>
+<li>Secțiunea de căutare (Search) – permite filtrarea și navigarea printre cazări;</li>
+<li>Secțiunea de cazare – oferă detalii, opțiuni de rezervare și previzualizare VR;</li>
+<li>Contul utilizatorului (Account) – include detalii personale, istoricul călătoriilor și setările;</li>   
+<li>Funcționalitate la locație – permite verificarea dacă locația reală corespunde cu prezentarea în VR.</li>
+</ul>
+<p>Această structură reflectă o organizare logică și ușor de navigat, gândită pentru utilizatorii de mobil care doresc acces rapid la informații esențiale.</p>
     <h3>3.2 Flux de utilizator</h3>
-    <p>Diagrama de user flow reflectă pașii logici: de la căutare până la rezervare și verificarea locației. Acest proces susține o experiență coerentă și fără fricțiuni pentru utilizatorii mobili.</p>
-
+    <p>Am realizat și o diagramă de user flow extins, care ilustrează pașii detaliați pe care îi urmează un utilizator tipic într-un scenariu complet de utilizare: de la deschiderea aplicației, căutarea unei cazări, vizualizarea detaliilor, până la finalizarea rezervării și gestionarea călătoriilor.
+</p>
+<ul>
+    <li>Pagina principală – unde utilizatorul poate vedea sugestii personalizate sau poate începe o căutare;</li>
+    <li>Pagina de căutare – cu opțiuni de filtrare după locație, dată, preț etc.;</li>
+    <li>Rezultatele căutării – unde utilizatorul poate vizualiza carduri cu cazări și poate accesa detalii;</li>
+<li>Pagina de detalii – care include opțiunea de previzualizare VR, facilități, locații din apropiere și buton de rezervare;</li>
+<li>Pagina de tranzacție – unde se confirmă detaliile și se face plata;</li>
+<li>Pagina de cont – cu istoricul călătoriilor și posibilitatea de a adăuga feedback sau de a contacta gazda;</li>
+<li>Pagina de călătorie activă – unde utilizatorul poate verifica dacă locul vizitat corespunde cu cel prezentat în VR.</li>
+</ul>
+<p>Acest user flow ne-a ajutat să identificăm ecranele esențiale pentru prototipare și să ne asigurăm că tranzițiile între stări sunt logice și ușor de parcurs.</p>
     <h3>3.3 Patternuri de interacțiune</h3>
     <ul>
         <li>Carduri vizuale pentru listarea cazărilor;</li>
@@ -57,13 +87,66 @@
     </ul>
 
     <h3>3.4 Stil vizual</h3>
-    <p>Paleta cromatică este bazată pe tonuri de verde, simbolizând natura și relaxarea. Fonturile utilizate includ Nunito (titluri), Open Sans (text corp) și Cormorant Garamond (accente decorative). Iconografia este simplificată, vectorială și consistentă, iar elementele interactive respectă dimensiuni minime recomandate (44x44 px).</p>
+    <p>Pentru a asigura o identitate vizuală coerentă și ușor de recunoscut în cadrul aplicației, am realizat un ghid de stil care definește paleta de culori, fonturile folosite și stilul iconografic.</p>
 
-    <h2>4. Discuții</h2>
-    <p>Designul ARBNB reflectă nevoile actuale ale utilizatorilor mobili, dar se extinde conceptual și către interfețe MR, cu navigare bazată pe privire și gesturi. Adaptările includ simplitatea conținutului, ancorare spațială și animații fluide pentru tranziții.</p>
+    <h4>Paleta de culori</h4>
+    <p>Paleta principală folosește nuanțe de verde, sugerând ideea de natură, relaxare și încredere, elemente esențiale în contextul unei aplicații de călătorii. Culorile sunt alese pentru a fi suficient de contrastante și accesibile pe ecrane mobile sau în medii cu lumină puternică (ex. în aer liber).</p>
 
+    <h4>Tipografie</h4>
+    <p>Pentru text, am ales o combinație între fonturi moderne și elegante, pentru a menține lizibilitatea, dar și un aspect profesional și prietenos.
+</p>
+<p>Nunito – folosit pentru titluri și heading-uri, datorită aspectului său curat și rotunjit, potrivit pentru ecrane mobile;
+</p>
+<p>Open Sans – folosit pentru textul de bază (body), ales pentru lizibilitate și compatibilitate largă pe web;</p>
+<p>Cormorant Garamond – utilizat ocazional pentru elemente decorative sau titluri în pagina de prezentare, pentru un accent elegant.</p>   
+<p>Am respectat dimensiunile și line height-ul recomandat pentru fiecare nivel de heading și corp de text, pentru a asigura o ierarhie vizuală clară.</p>
+
+<h4>Iconografie</h4>
+<p>Stilul de iconuri este monocrom, rotunjit și simplificat, pentru a se integra armonios cu interfața curată a aplicației. Iconurile sunt vectoriale, consistente ca grosime a liniei și stil, provenind din seturi standard (Material Icons, Feather Icons sau biblioteci similare).
+</p>
+<p>Principii:</p>
+<ul>
+    <li>Pictogramele sunt aliniate pe grilă de 24x24 px;</li>
+    <li>
+Se evită detaliile inutile, în favoarea lizibilității rapide;
+    </li>
+    <li>Se păstrează aceeași grosime a liniilor pentru consistență vizuală.</li>
+</ul>
+<h4> Moodboard</h4>
+<p>Am inclus un moodboard vizual care reflectă atmosfera dorită a aplicației: călătorii, explorare, conectare cu natura și confort. Imaginile alese sugerează atât destinații autentice, cât și experiențe tehnologice moderne (inclusiv realitate virtuală sau interfețe inteligente).
+</p>
+
+<h2>4. Patternuri de interacțiune și decizii de design</h2>
+<p>Acest document descrie deciziile de design și patternurile de interacțiune utilizate în dezvoltarea aplicației mobile ARBNB. Proiectul este centrat pe oferirea unei experiențe de utilizare clare, coerente și fluente, adaptate atât pentru dispozitive mobile, cât și – într-o formă conceptuală – pentru interfețe MR (mixed reality).</p>
+<h3>Patternuri utilizate – mobil</h3>
+<p>Pentru interfața mobilă, am folosit mai multe patternuri standardizate și validate în designul UX/UI:</p>
+<ul>
+            <li><strong>Meniu tip hamburger</strong> în colțul stânga sus, care permite acces la setările contului și alte funcții secundare fără a aglomera interfața principală.</li>
+            <li><strong>Carduri pentru cazări</strong>, cu informații esențiale (nume, locație, preț, rating) și imagini mari, pentru a permite o scanare rapidă a opțiunilor. Acestea sunt ușor de parcurs prin scroll vertical.</li>
+            <li><strong>Filtrare interactivă</strong> – utilizatorul poate filtra după preț, rating, tipuri de facilități etc., folosind un panou dedicat ușor de accesat.</li>
+            <li><strong>Feedback vizual</strong> – butoanele de „Select”, „Book” sau „Pay” sunt evidențiate prin culoare și dimensiune, iar activările oferă răspuns imediat.</li>
+            <li><strong>Formular multi-pas</strong> – pentru introducerea datelor de călătorie, am folosit un flux clar, care împarte procesul în pași ușor de parcurs.</li>
+            <li><strong>Empty states</strong> – zonele fără conținut (ex: cont fără călătorii viitoare) sunt tratate vizual pentru a încuraja interacțiunea.</li>
+            <li><strong>Gamificare ușoară în onboarding</strong>, printr-un quiz care ajută utilizatorul să primească sugestii personalizate, bazate pe preferințe de călătorie.</li>
+        </ul>
+        <h3>Tranziția de la mobil la interfață MR</h3>
+
+        <p>Versiunea pentru headset MR extinde funcționalitățile aplicației într-un mediu imersiv. În locul interacțiunii tactile, am propus un sistem bazat pe gesturi și privire (gaze-based navigation), unde utilizatorul poate:
+</p>
+ <ul>
+            <li>naviga printre cazări folosind panouri 3D interactive,</li>
+            <li>vizualiza randări VR ale cazărilor într-un spațiu tridimensional real,</li>
+            <li>accesa informații suplimentare prin meniuri radiale sau <em>contextual panels</em>,</li>
+            <li>verifica la locație dacă spațiul fizic corespunde cu cel prezentat în VR.</li>
+        </ul>
+        <p>Această tranziție necesită adaptarea layoutului, a dimensiunilor și a densității de conținut. Prin urmare:</p>
+        <ul>
+            <li>am simplificat UI-ul în MR, păstrând doar informațiile esențiale vizibile simultan;</li>
+            <li>am folosit ancorare spațială pentru a poziționa conținutul la nivelul ochilor;</li>
+            <li>tranzițiile dintre stări sunt însoțite de animații line, pentru a menține coerența percepției în spațiu.</li>
+        </ul>
     <h2>5. Concluzii</h2>
-    <p>Proiectul ARBNB demonstrează aplicabilitatea unui design centrat pe utilizator în context mobil și MR. Studiul contribuie la înțelegerea patternurilor eficiente de interacțiune și subliniază importanța simplității, clarității și eficienței în experiențele digitale de rezervare.</p>
+    <p>Designul aplicației ARBNB este construit pe un fundament de patternuri de interacțiune consacrate, adaptate la nevoile specifice ale utilizatorilor mobili și extinse într-un mod inovator pentru platformele MR. În ambele cazuri, obiectivul principal a fost păstrarea simplității, clarității și accesibilității.</p>
 
 
     <footer>
