@@ -1,5 +1,5 @@
 # HCI-ARBNB
-Proiectul ARBNB - Balasca Mihai, Chiriac Teodora, Matcu-Zbranca Beatrice si Onisor Patricia 
+Proiectul ARBNB - Balașcă Mihai, Chiriac Teodora, Mațcu-Zbranca Beatrice și Onișor Patricia 
 
 ### Linkuri conversatii Chatgpt:
 #### Generare profil persona: https://chatgpt.com/share/681c9ae3-5cc4-8008-94e1-d96917c1c069
